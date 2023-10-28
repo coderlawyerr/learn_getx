@@ -55,9 +55,7 @@ class TaskListScreen extends StatelessWidget {
             builder: (context) {
               return AlertDialog(
                 title: Text('Görev Ekle'),
-                content: TextField(
-                  controller: taskControllerText,
-                ),
+                content: TextField(controller: taskControllerText),
                 actions: [
                   TextButton(
                     onPressed: () {
