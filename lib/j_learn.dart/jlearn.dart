@@ -34,6 +34,7 @@ class _UserListScreenState extends State<UserListScreen> {
     if (response.statusCode == 200) {
       final List<dynamic> responseData = json.decode(response.body);
       users = responseData.map((data) => User.fromJson(data)).toList();
+
       setState(() {});
     }
   }
